@@ -8,8 +8,8 @@ function createApp() {
     const app = express()
 
     const corsOptions = {
-        origin: 'http://127.0.0.1:5500/',
-        methods: 'GET, DELETE'
+        origin: 'http://localhost:3000',
+        methods: 'GET, DELETE, POST, PUT, PATCH',
     }
     app.use(cors(corsOptions))
 
