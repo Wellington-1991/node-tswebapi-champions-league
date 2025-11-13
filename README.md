@@ -1,4 +1,11 @@
+<!--
+    Este README.md foi gerado com base nos arquivos do seu projeto.
+    Sinta-se à vontade para personalizá-lo com mais detalhes, capturas de tela,
+    informações sobre o autor, licença, etc.
+-->
+
 # Project Champions League API
+Uma API RESTful robusta desenvolvida com Node.js e Express.js em TypeScript, projetada para gerenciar dados de clubes de futebol, possivelmente no contexto da Champions League. A utilização de TypeScript garante maior segurança, detecção precoce de erros e manutenibilidade do código. Esta API serve como um backend para uma aplicação frontend que necessita de informações sobre clubes.
 
 Uma API RESTful desenvolvida com Node.js e Express.js em TypeScript, projetada para gerenciar dados de clubes de futebol, possivelmente no contexto da Champions League. Esta API serve como um backend para uma aplicação frontend que necessita de informações sobre clubes.
 
@@ -7,6 +14,7 @@ Uma API RESTful desenvolvida com Node.js e Express.js em TypeScript, projetada p
 *   **Node.js**: Ambiente de execução JavaScript.
 *   **Express.js**: Framework web para Node.js, utilizado para construir a API.
 *   **TypeScript**: Linguagem de programação que adiciona tipagem estática ao JavaScript, melhorando a manutenibilidade e escalabilidade do código.
+*   **TypeScript**: Linguagem de programação que adiciona tipagem estática ao JavaScript, crucial para a detecção precoce de erros, melhorando a manutenibilidade, escalabilidade e a robustez do código.
 *   **CORS (Cross-Origin Resource Sharing)**: Middleware para Express.js que permite controlar quais origens podem acessar os recursos da API.
 *   **dotenv**: Módulo para carregar variáveis de ambiente de um arquivo `.env`.
 *   **JSON**: Utilizado como formato de armazenamento de dados para os clubes (simulando um banco de dados simples).

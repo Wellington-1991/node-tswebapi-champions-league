@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Real Madrid",
+        "country": "Espanha"
+    },
+    {
+        "id": 2,
+        "name": "Manchester City",
+        "country": "Inglaterra"
+    },
+    {
+        "id": 3,
+        "name": "Inter Miami",
+        "country": "Estados Unidos"
+    },
+    {
+        "id": 4,
+        "name": "Liverpool",
+        "country": "Inglaterra"
+    },
+    {
+        "id": 5,
+        "name": "Al Hilal",
+        "country": "Arábia Saudita"
+    },
+    {
+        "id": 6,
+        "name": "Barcelona",
+        "country": "Espanha"
+    },
+    {
+        "id": 7,
+        "name": "Al Nassr",
+        "country": "Arábia Saudita"
+    },
+    {
+        "id": 8,
+        "name": "Bayern de Munique",
+        "country": "Alemanha"
+    },
+    {
+        "id": 9,
+        "name": "Manchester United",
+        "country": "Inglaterra"
+    },
+    {
+        "id": 10,
+        "name": "Arsenal",
+        "country": "Inglaterra"
+    }
+]
