@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de CORS</title>
+</head>
+<body>
+    <h1>Teste de Requisição Cross-Origin (CORS)</h1>
+    <p>
+        Abra o console do desenvolvedor (pressione F12) e clique no botão abaixo para tentar fazer uma requisição DELETE para <code>http://localhost:3000/api/alguma-coisa</code>.
+    </p>
+    <p>
+        A configuração atual do CORS no servidor (<code>methods: 'GET'</code>) deve <strong>bloquear</strong> esta requisição no navegador.
+    </p>
+    <button id="deleteButton">Tentar Excluir Recurso</button>
+    <div id="result" style="margin-top: 20px; font-family: monospace;"></div>
+
+    <script>
+        document.getElementById('deleteButton').addEventListener('click', () => {
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = 'Enviando requisição DELETE...';
+            console.log('Tentando enviar requisição DELETE para http://localhost:3333/api/players/1');
+
+            fetch('http://localhost:3333/api/players/1', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+            .then(response => {
+                // Este bloco provavelmente não será alcançado devido ao erro de CORS
+                resultDiv.textContent = 'Sucesso! O recurso foi excluído. (Isso não deveria acontecer)';
+                resultDiv.style.color = 'green';
+                return response.text();
+            })
+            .catch(error => {
+                // O navegador deve cair aqui com um erro de CORS
+                console.error('Erro ao fazer a requisição:', error);
+                resultDiv.textContent = `Falha na requisição! Erro: ${error.message}. Verifique o console para detalhes do erro de CORS.`;
+                resultDiv.style.color = 'red';
+            });
+        });
+    </script>
+</body>
+</html>
